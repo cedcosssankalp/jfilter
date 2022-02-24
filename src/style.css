@@ -1,35 +1,76 @@
-table {
-    
-  text-align: center;
-  border: 2px solid black;
-}
-table,
-td,
-tr,
-th {
-  border: 2px solid black;
-}
-td,
-th {
-  padding: 10px;
-}
-#table {
-  margin-top: 10px;
-  width: 600px;
-}
-#tbody tr:nth-child(odd) {
-  background-color: #e7e9eb;
-}
-.wrapper {
-  width: 80%;
-  margin-left: 10%;
-}
-#os,
-#brand,
-#search-input {
-  padding: 4px;
+
+#searchInput{
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 20px;
+	padding: 8px;
 }
 
-body{
-    background-color: bisque;
-}
+#idtable {
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  #idtable td, #idtable th {
+	border: 1px solid greenyellow;
+	padding: 8px;
+  }
+  
+  #idtable tr:nth-child(even){background-color: lightcyan;}
+  
+  #idtable tr:hover {background-color: gray;
+
+color: white;}
+  
+  #idtable th {
+	font-size: 25px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: rgb(244,128,36);
+	color: white;
+  }
+  /* Dropdown Button */
+.dropbtn {
+	background-color: #f4511e;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	margin: 20px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #f4511e;}
